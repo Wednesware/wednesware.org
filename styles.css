@@ -888,6 +888,47 @@ textarea {
     animation: pulse 1.6s ease infinite;
 }
 
+.hyperlink {
+    color: #4d9aff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.hyperlink:hover,
+.hyperlink:focus-visible {
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+body[data-page="publication"] .hero {
+    width: min(920px, 100%);
+    margin-inline: auto;
+    justify-items: stretch;
+    text-align: left;
+}
+
+body[data-page="publication"] .publication-item {
+    width: 100%;
+}
+
+body[data-page="publication"] .publication-main {
+    display: grid;
+    gap: 0.9rem;
+}
+
+body[data-page="publication"] .button-row.centered {
+    justify-content: flex-start;
+}
+
+body[data-page="publication"] .pub-title {
+    line-height: 1;
+}
+
+body[data-page="publication"] .status {
+    width: fit-content;
+}
+
 @keyframes gradient-flow {
     0% {
         background-position: 0% 50%;
@@ -981,6 +1022,67 @@ textarea {
 }
 
 @media (max-width: 760px) {
+    body[data-page="publication"] .page-wrap {
+        width: min(100%, calc(100% - 1.1rem));
+    }
+
+    body[data-page="publication"] .shell {
+        padding-top: 5.9rem;
+        padding-bottom: 2.4rem;
+    }
+
+    body[data-page="publication"] .hero {
+        padding-top: 1.1rem;
+        padding-bottom: 0.4rem;
+        gap: 1rem;
+    }
+
+    body[data-page="publication"] .publication-item {
+        padding: 1rem 0.9rem;
+        gap: 0.9rem;
+    }
+
+    body[data-page="publication"] .pub-title {
+        font-size: clamp(2.2rem, 14vw, 3.6rem);
+        letter-spacing: -0.03em;
+        overflow-wrap: anywhere;
+    }
+
+    body[data-page="publication"] .pub-full-name {
+        margin-left: 0;
+        display: block;
+    }
+
+    body[data-page="publication"] .pub-full-name-larger {
+        font-size: 1.1rem;
+    }
+
+    body[data-page="publication"] .publication-meta {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+
+    body[data-page="publication"] .button-row.centered {
+        width: 100%;
+        gap: 0.55rem;
+    }
+
+    body[data-page="publication"] .button-row.centered .btn {
+        flex: 1 1 100%;
+        width: 100%;
+        min-height: 2.85rem;
+        padding: 0.72rem 0.9rem;
+    }
+
+    body[data-page="publication"] .status {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.52rem;
+    }
+
+    body[data-page="publication"] br {
+        display: none;
+    }
+
     .shell {
         padding-top: 6.5rem;
     }
