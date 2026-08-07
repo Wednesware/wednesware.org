@@ -15,7 +15,7 @@
     --lithium: #2acfff;
     --magnesium: #56ff9a;
     --helium: #ff9ad7;
-    --sodium: #4fce3f;
+    --hydrogen: #dd2020;
     --neon: #9e88ff;
     --oxygen: #ff9560;
     --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
@@ -201,6 +201,10 @@ a {
     --nav-hover-gradient: linear-gradient(120deg, #ff5f75, #ffc554, #62f7ff);
 }
 
+.nav-distros {
+    --nav-hover-gradient: linear-gradient(120deg, #e645b0, #ff006a, #e65aa4);
+}
+
 .nav-inbox {
     --nav-hover-gradient: linear-gradient(120deg, #ff8f44, #ffe17b);
 }
@@ -364,6 +368,7 @@ a {
     padding: 1.1rem;
     min-height: 100%;
     transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+    position: relative;
 }
 
 .card:hover {
@@ -380,6 +385,61 @@ a {
 .card p {
     color: var(--muted);
     margin-top: 0.55rem;
+}
+
+.hover-syntax {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(6px);
+    transition: max-height 0.24s ease, opacity 0.24s ease, transform 0.24s ease, margin-top 0.24s ease;
+    border-left: 2px solid rgba(255, 255, 255, 0.15);
+    padding-left: 0.55rem;
+}
+
+.card:hover .hover-syntax {
+    margin-top: 0.7rem;
+    max-height: min(260px, 45vh);
+    opacity: 1;
+    transform: translateY(0);
+    overflow-y: auto;
+}
+
+.syntax-line {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font-size: 0.86rem;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    margin-top: 0.2rem;
+}
+
+.hover-syntax .syntax-line:first-child {
+    margin-top: 0;
+}
+
+.syntax-ln {
+    color: rgba(165, 178, 194, 0.82);
+    min-width: 1.6rem;
+    text-align: right;
+}
+
+.syntax-cmd {
+    color: #82f0ff;
+}
+
+.syntax-key {
+    color: #ff85c8;
+}
+
+.syntax-arg {
+    color: #c4f37a;
+}
+
+.syntax-note {
+    color: #ffd08a;
 }
 
 .pill {
@@ -812,8 +872,8 @@ textarea {
     background-image: linear-gradient(90deg, #ffd54d, #ff6fd8, #4de1ff);
 }
 
-.pub-sodium {
-    background-image: linear-gradient(90deg, #00ff15, #0d460b, #9cff7e);
+.pub-hydrogen {
+    background-image: linear-gradient(90deg, #ff004c, #df3ba3, #ed9c9c);
 }
 
 .pub-neon {

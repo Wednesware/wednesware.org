@@ -63,7 +63,7 @@
             lithium: [32, 34, 36],
             magnesium: [27, 28, 30],
             helium: [34, 35, 38],
-            sodium: [29, 30, 33],
+            hydrogen: [38, 30, 33],
             neon: [36, 37, 40],
             oxygen: [31, 32, 35],
             iodine: [24, 2, 10]
