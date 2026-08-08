@@ -29,6 +29,7 @@
             <li><a class="nav-home" href="index.html" data-page="home">Home</a></li>
             <li><a class="nav-publications" href="publications.html" data-page="publications">Publications</a></li>
             <li><a class="nav-distros" href="distros.html" data-page="distros">Distributions</a></li>
+            <li><a class="nav-projects" href="projects.html" data-page="projects">Projects</a></li>
             <li><a class="nav-inbox" href="inbox.html" data-page="inbox">Inbox</a></li>
             <li><a class="nav-about" href="about.html" data-page="about">About</a></li>
             <li><a class="nav-team" href="team.html" data-page="team">Team</a></li>
@@ -65,128 +66,139 @@
     </section>
 
     <section class="section reveal" data-color="nitrogen">
-        <div class="grid cards-2">
-            <article class="card">
-                <span class="pill">Language ecosystem</span>
-                <h3><span class="pub pub-lithium">Lithium</span></h3>
-                <p>Helium-based Perkeo programming language interpreter and runtime ecosystem.</p>
-                <p class="code-chip mono">n2 get lithium</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">perkeo</span> <span class="syntax-arg">main.pk</span></p>
-                    <p class="syntax-line"><span class="syntax-ln">02</span><span class="syntax-cmd">perkeo</span> <span class="syntax-arg">myfile.pk</span> <span class="syntax-note">--ast</span></p>
+        <div class="publication-list">
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill">Language ecosystem</span>
+                    <h3><span class="pub pub-lithium">Lithium</span></h3>
+                    <p class="publication-meta">Helium-based Perkeo programming language interpreter and runtime ecosystem.</p>
+                    <span class="code-chip mono">n2 get lithium</span>
+                    <details class="install-dropdown">
+                        <summary>
+                            <span class="mono">Install methods</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="install-options">
+                            <p class="install-note">Choose the command that fits your workflow.</p>
+                            <span><span class="code-chip mono">pipx install wwli</span><span class="install-note"> (recommended)</span></span>
+                            <span><span class="code-chip mono">yay -S li</span><span class="install-note"> (best for arch-based systems)</span></span>
+                            <span><span class="code-chip mono">n2 get lithium</span><span class="install-note"> (library only)</span></span>
+                        </div>
+                    </details>
+                    <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
+                        <a class="btn btn-ghost" href="https://github.com/Wednesware/Lithium" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./lithium" rel="noopener noreferrer">Read more</a>
-                    <a class="btn btn-ghost" href="https://github.com/Wednesware/Lithium" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-            </article>
-            
-            <article class="card">
-                <span class="pill">Installer</span>
-                <h3><span class="pub pub-nitrogen">Nitrogen</span></h3>
-                <p>Easy, lightweight installer for official publications.</p>
-                <p class="code-chip mono">pipx install wwn</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">n2</span> <span class="syntax-key">get</span> <span class="syntax-arg">mg 26.11</span></p>
-                </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./nitrogen" rel="noopener noreferrer">Read more</a>
-                    <a class="btn btn-ghost" href="https://github.com/Wednesware/Nitrogen" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a class="btn btn-ghost" href="https://pypi.org/publication/wwn/" target="_blank" rel="noopener noreferrer">PyPI</a>
-                    <a class="btn btn-ghost" href="https://aur.archlinux.org/packages/n2" target="_blank" rel="noopener noreferrer">AUR</a>
+                <span class="status live status-no-disappear">LIVE</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./lithium" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
-
-            <article class="card">
-                <span class="pill">Core library</span>
-                <h3><span class="pub pub-magnesium">Magnesium</span></h3>
-                <p>Utilities for logging, config, path handling and rich data operations.</p>
-                <p class="code-chip mono">n2 get magnesium</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-key">from</span> ww.mg.color <span class="syntax-key">import</span> Color</p>
-                    <p class="syntax-line"><span class="syntax-ln">02</span><span class="syntax-key">from</span> ww.mg.config <span class="syntax-key">import</span> ObjectNotation</p>
-                    <p class="syntax-line"><span class="syntax-ln">03</span><span class="syntax-key">from</span> ww.mg.filepath <span class="syntax-key">import</span> FilePath</p>
-                    <p class="syntax-line"><span class="syntax-ln">04</span><span class="syntax-key">from</span> ww.mg.group <span class="syntax-key">import</span> Group</p>
-                    <p class="syntax-line"><span class="syntax-ln">05</span><span class="syntax-key">from</span> ww.mg.handle <span class="syntax-key">import</span> handle</p>
-                    <p class="syntax-line"><span class="syntax-ln">06</span><span class="syntax-key">from</span> ww.mg.list <span class="syntax-key">import</span> List2D</p>
-                    <p class="syntax-line"><span class="syntax-ln">07</span><span class="syntax-key">from</span> ww.mg.logging <span class="syntax-key">import</span> log</p>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill">Installer</span>
+                    <h3><span class="pub pub-nitrogen">Nitrogen</span></h3>
+                    <p class="publication-meta">Ultra-light installer for official Wednesware publications.</p>
+                    <span class="code-chip mono">pipx install wwn</span>
+                    <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
+                        <a class="btn btn-ghost" href="https://github.com/Wednesware/Nitrogen" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="btn btn-ghost" href="https://pypi.org/publication/wwn/" target="_blank" rel="noopener noreferrer">PyPI</a>
+                        <a class="btn btn-ghost" href="https://aur.archlinux.org/packages/n2" target="_blank" rel="noopener noreferrer">AUR</a>
+                    </div>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./magnesium" rel="noopener noreferrer">Read more</a>
-                    <a class="btn btn-ghost" href="https://github.com/Wednesware/Magnesium" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="status live status-no-disappear">LIVE</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./nitrogen" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
-
-            <article class="card">
-                <span class="pill">Publication toolkit</span>
-                <h3><span class="pub pub-helium">Helium</span></h3>
-                <p>Create modular publications and script-based runtimes with less boilerplate.</p>
-                <p class="code-chip mono">n2 get helium</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-key">from</span> ww.he <span class="syntax-key">import</span> Project</p>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill">Core library</span>
+                    <h3><span class="pub pub-magnesium">Magnesium</span></h3>
+                    <p class="publication-meta">Utilities for logging, config, path handling and rich data operations.</p>
+                    <span class="code-chip mono">n2 get magnesium</span>
+                    <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
+                        <a class="btn btn-ghost" href="https://github.com/Wednesware/Magnesium" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./helium" rel="noopener noreferrer">Read more</a>
-                    <a class="btn btn-ghost" href="https://github.com/Wednesware/Helium" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <span class="pill">Distributions</span>
-                <h3><span class="pub pub-hydrogen">Hydrogen</span></h3>
-                <p>Official and community-made distribution installer.</p>
-                <p class="code-chip mono">pipx install wwh</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">h2</span> <span class="syntax-key">get</span> <span class="syntax-arg">ww.grapple 26.1</span></p>
-                </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./hydrogen" rel="noopener noreferrer">Read more</a>
-                    <a class="btn btn-ghost" href="https://github.com/Wednesware/Hydrogen" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="status live status-no-disappear">LIVE</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./magnesium" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
-
-            <article class="card">
-                <span class="pill">DX</span>
-                <h3><span class="pub pub-neon">Neon</span></h3>
-                <p>Terminal animation toolkit for expressive, polished command-line interfaces.</p>
-                <p class="code-chip mono">n2 get neon</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-key">from</span> ww.ne.animation <span class="syntax-key">import</span> Animation</p>
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-key">from</span> ww.ne.gradient <span class="syntax-key">import</span> Gradient</p>
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-key">from</span> ww.ne.palette <span class="syntax-key">import</span> Palette</p>
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-key">from</span> ww.ne.terminal <span class="syntax-key">import</span> Terminal</p>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill">Publication toolkit</span>
+                    <h3><span class="pub pub-helium">Helium</span></h3>
+                    <p class="publication-meta">Create modular publications and script-based runtimes with less boilerplate.</p>
+                    <span class="code-chip mono">n2 get helium</span>
+                    <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
+                        <a class="btn btn-ghost" href="https://github.com/Wednesware/Helium" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./neon" rel="noopener noreferrer">Read more</a>
-                    <a class="btn btn-ghost" href="https://github.com/Wednesware/Neon" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="status live status-no-disappear">LIVE</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./helium" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
-
-            <article class="card">
-                <span class="pill">Perkeo libraries</span>
-                <h3><span class="pub pub-oxygen">Oxygen</span></h3>
-                <p>Official installer for Perkeo ports of existing publications.</p>
-                <p class="code-chip mono">pipx install wwo</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">o2</span> <span class="syntax-key">get</span> <span class="syntax-arg">mg 26.1</span></p>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill">Distributions</span>
+                    <h3><span class="pub pub-hydrogen">Hydrogen</span></h3>
+                    <p class="publication-meta">Official and community-made distribution installer.</p>
+                    <span class="code-chip mono">pipx install wwh</span>
+                    <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
+                        <a class="btn btn-ghost" href="https://github.com/Wednesware/Hydrogen" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./oxygen" rel="noopener noreferrer">Read more</a>
-                    <a class="btn btn-ghost" href="https://github.com/Wednesware/Oxygen" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="status wip status-no-disappear">DEVELOPMENT QUEUED</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./hydrogen" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
-
-            <article class="card">
-                <span class="pill">Terminal input</span>
-                <h3><span class="pub pub-iodine">Iodine</span></h3>
-                <p>Smart terminal input widgets for professional command-line interaction.</p>
-                <p class="code-chip mono">n2 get iodine</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-key">from</span> ww.i <span class="syntax-key">import</span> run</p></p>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill">DX</span>
+                    <h3><span class="pub pub-neon">Neon</span></h3>
+                    <p class="publication-meta">Terminal animation toolkit for expressive, polished command-line interfaces.</p>
+                    <span class="code-chip mono">n2 get neon</span>
+                    <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
+                        <a class="btn btn-ghost" href="https://github.com/Wednesware/Neon" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./iodine" rel="noopener noreferrer">Read more</a>
-                    <a class="btn btn-ghost" href="https://github.com/Wednesware/Iodine" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="status live status-no-disappear">LIVE</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./neon" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
+                </div>
+            </article>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill">Perkeo libraries</span>
+                    <h3><span class="pub pub-oxygen">Oxygen</span></h3>
+                    <p class="publication-meta">Official installer for Perkeo ports of existing publications.</p>
+                    <span class="code-chip mono">pipx install wwo</span>
+                    <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
+                        <a class="btn btn-ghost" href="https://github.com/Wednesware/Oxygen" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+                <span class="status wip status-no-disappear">DEVELOPMENT QUEUED</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./oxygen" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
+                </div>
+            </article>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill">Terminal input</span>
+                    <h3><span class="pub pub-iodine">Iodine</span></h3>
+                    <p class="publication-meta">Smart terminal input widgets for professional command-line interaction.</p>
+                    <span class="code-chip mono">n2 get iodine</span>
+                    <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
+                        <a class="btn btn-ghost" href="https://github.com/Wednesware/Iodine" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+                <span class="status live status-no-disappear">LIVE</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./iodine" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
         </div>

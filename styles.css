@@ -205,6 +205,10 @@ a {
     --nav-hover-gradient: linear-gradient(120deg, #e645b0, #ff006a, #e65aa4);
 }
 
+.nav-projects {
+    --nav-hover-gradient: linear-gradient(120deg, #8ae277, #26cd66, #40a128);
+}
+
 .nav-inbox {
     --nav-hover-gradient: linear-gradient(120deg, #ff8f44, #ffe17b);
 }
@@ -369,6 +373,7 @@ a {
     min-height: 100%;
     transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
     position: relative;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -387,70 +392,18 @@ a {
     margin-top: 0.55rem;
 }
 
-.hover-syntax {
-    margin-top: 0;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(6px);
-    transition: max-height 0.24s ease, opacity 0.24s ease, transform 0.24s ease, margin-top 0.24s ease;
-    border-left: 2px solid rgba(255, 255, 255, 0.15);
-    padding-left: 0.55rem;
-}
-
-.card:hover .hover-syntax {
-    margin-top: 0.7rem;
-    max-height: min(260px, 45vh);
-    opacity: 1;
-    transform: translateY(0);
-    overflow-y: auto;
-}
-
-.syntax-line {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-    font-size: 0.86rem;
-    letter-spacing: -0.01em;
-    white-space: nowrap;
-    margin-top: 0.2rem;
-}
-
-.hover-syntax .syntax-line:first-child {
-    margin-top: 0;
-}
-
-.syntax-ln {
-    color: rgba(165, 178, 194, 0.82);
-    min-width: 1.6rem;
-    text-align: right;
-}
-
-.syntax-cmd {
-    color: #82f0ff;
-}
-
-.syntax-key {
-    color: #ff85c8;
-}
-
-.syntax-arg {
-    color: #c4f37a;
-}
-
-.syntax-note {
-    color: #ffd08a;
-}
-
 .pill {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     font-size: 0.78rem;
     font-weight: 700;
     color: #d6dced;
     padding: 0.2rem 0.55rem;
-    margin-bottom: 0.55rem;
+    margin: 0 0.35rem 0.35rem 0;
+    line-height: 1.2;
 }
 
 .special-pill {
@@ -504,6 +457,29 @@ a {
 .publication-main {
     position: relative;
     z-index: 2;
+    width: 100%;
+    display: block;
+    text-align: left;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.publication-main > .pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #d6dced;
+    padding: 0.2rem 0.55rem;
+    margin: 0 0.35rem 0.35rem 0;
+    line-height: 1.2;
+}
+
+.publication-main > :not(.pill) {
+    margin-top: 0.55rem;
 }
 
 .publication-end {
@@ -558,6 +534,15 @@ a {
 .publication-item:hover .status-no-disappear {
     opacity: 1;
     transform: translateX(0px);
+}
+
+.card:hover .publication-end {
+    width: 220px;
+}
+
+.card:hover .publication-github {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .team-member-card {
@@ -645,6 +630,10 @@ a {
 .publication-meta {
     color: var(--muted);
     font-size: 0.95rem;
+    line-height: 1.6;
+    width: min(100%, 75%);
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .mono {
@@ -771,9 +760,15 @@ a {
     font-size: 0.92rem;
 }
 
+.center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .article {
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 0px;
     padding: 1.1rem;
     background: rgba(255, 255, 255, 0.03);
 }
@@ -912,7 +907,7 @@ textarea {
 }
 
 .align-left {
-    text-align: left;
+    text-align: center;
 }
 
 .ticker {
@@ -948,6 +943,10 @@ textarea {
     animation: pulse 1.6s ease infinite;
 }
 
+.distro-tag {
+    margin-right: 0.3rem;
+}
+
 .hyperlink {
     color: #4d9aff;
     text-decoration: underline;
@@ -964,8 +963,8 @@ textarea {
 body[data-page="publication"] .hero {
     width: min(920px, 100%);
     margin-inline: auto;
-    justify-items: stretch;
-    text-align: left;
+    justify-items: center;
+    text-align: center;
 }
 
 body[data-page="publication"] .publication-item {
@@ -973,12 +972,25 @@ body[data-page="publication"] .publication-item {
 }
 
 body[data-page="publication"] .publication-main {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 0.9rem;
+    text-align: center;
+}
+
+body[data-page="publication"] .publication-meta {
+    width: min(100%, 75%);
+    margin-inline: auto;
+    text-align: center;
+}
+
+body[data-page="publication"] .status {
+    margin-inline: auto;
 }
 
 body[data-page="publication"] .button-row.centered {
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 body[data-page="publication"] .pub-title {
@@ -1178,6 +1190,14 @@ body[data-page="publication"] .status {
         grid-template-columns: 1fr;
     }
 
+    .hub-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mini-hub-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .publication-item {
         grid-template-columns: 1fr;
     }
@@ -1213,6 +1233,164 @@ body[data-page="publication"] .status {
         opacity: 1;
         transform: none;
     }
+}
+
+/* ── Index hub navigation cards ──────────────────────────── */
+.hub-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.hub-card {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border: 1px solid var(--border);
+    padding: 2.2rem 1.75rem 3rem;
+    min-height: 210px;
+    background: rgba(255, 255, 255, 0.03);
+    transition: border-color 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.hub-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background-size: 300% 300%;
+    transition: opacity 0.4s ease;
+    animation: gradient-flow 7s ease infinite;
+}
+
+.hub-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.22);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.4);
+}
+
+.hub-card:hover::before {
+    opacity: 1;
+}
+
+.hub-card-publications::before {
+    background: linear-gradient(135deg, rgba(42, 207, 255, 0.22), rgba(255, 86, 106, 0.14), rgba(42, 207, 255, 0.1));
+}
+
+.hub-card-distros::before {
+    background: linear-gradient(135deg, rgba(221, 32, 32, 0.22), rgba(255, 133, 200, 0.14), rgba(221, 32, 32, 0.1));
+}
+
+.hub-card-projects::before {
+    background: linear-gradient(135deg, rgba(249, 224, 90, 0.2), rgba(255, 123, 84, 0.16), rgba(249, 224, 90, 0.08));
+}
+
+.hub-card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.hub-label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+}
+
+.hub-card h2 {
+    font-size: clamp(1.3rem, 2.2vw, 1.85rem);
+    letter-spacing: -0.03em;
+    margin-top: 0.4rem;
+    line-height: 1.15;
+}
+
+.hub-card-body > p {
+    color: var(--muted);
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.hub-arrow {
+    position: absolute;
+    bottom: 1.4rem;
+    right: 1.6rem;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translate(-5px, 5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+    color: var(--muted);
+}
+
+.hub-card:hover .hub-arrow {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.mini-hub-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.mini-hub-card {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border: 1px solid var(--border);
+    padding: 1rem 1.2rem 1.3rem;
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    text-decoration: none;
+}
+
+.mini-hub-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mini-hub-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--text);
+}
+
+.mini-hub-card:hover::before {
+    opacity: 1;
+}
+
+.mini-hub-inbox::before   { background: linear-gradient(135deg, rgba(255, 143, 68, 0.16), transparent 70%); }
+.mini-hub-about::before   { background: linear-gradient(135deg, rgba(90, 243, 181, 0.15), transparent 70%); }
+.mini-hub-team::before    { background: linear-gradient(135deg, rgba(200, 208, 218, 0.14), transparent 70%); }
+.mini-hub-contact::before { background: linear-gradient(135deg, rgba(197, 141, 255, 0.17), transparent 70%); }
+
+.mini-hub-name {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    color: var(--text);
+}
+
+.mini-hub-desc {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--muted);
+    position: relative;
+    z-index: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -29,6 +29,7 @@
             <li><a class="nav-home" href="index.html" data-page="home">Home</a></li>
             <li><a class="nav-publications" href="publications.html" data-page="publications">Publications</a></li>
             <li><a class="nav-distros" href="distros.html" data-page="distros">Distributions</a></li>
+            <li><a class="nav-projects" href="projects.html" data-page="projects">Projects</a></li>
             <li><a class="nav-inbox" href="inbox.html" data-page="inbox">Inbox</a></li>
             <li><a class="nav-about" href="about.html" data-page="about">About</a></li>
             <li><a class="nav-team" href="team.html" data-page="team">Team</a></li>
@@ -66,119 +67,111 @@
 
     <section class="section reveal" data-color="helium">
         <!-- PILLS
-            <span class="pill"><i class="fa-solid fa-gamepad"></i> GAME</span>
-            <span class="pill"><i class="fa-solid fa-bolt"></i> PRODUCTIVITY</span>
-            <span class="pill"><i class="fa-solid fa-microchip"></i> AI</span>
-            <span class="pill"><i class="fa-solid fa-robot"></i> AUTOMATION</span>
-            <span class="pill"><i class="fa-solid fa-flask"></i> BETA</span>
-            <span class="pill"><i class="fa-solid fa-code"></i> FRAMEWORK/LIBRARY</span>
-            <span class="pill"><i class="fa-solid fa-terminal"></i> APP/CLI</span>
+            <span class="pill"><i class="fa-solid fa-gamepad distro-tag"></i> GAME</span>
+            <span class="pill"><i class="fa-solid fa-bolt distro-tag"></i> PRODUCTIVITY</span>
+            <span class="pill"><i class="fa-solid fa-microchip distro-tag"></i> AI</span>
+            <span class="pill"><i class="fa-solid fa-robot distro-tag"></i> AUTOMATION</span>
+            <span class="pill"><i class="fa-solid fa-flask distro-tag"></i> BETA</span>
+            <span class="pill"><i class="fa-solid fa-code distro-tag"></i> FRAMEWORK/LIBRARY</span>
+            <span class="pill"><i class="fa-solid fa-terminal distro-tag"></i> APP/CLI</span>
         -->
-        <div class="grid cards-2">
-            <article class="card">
-                <span class="pill"><i class="fa-solid fa-gamepad"></i> GAME</span>
-                <span class="pill"><i class="fa-solid fa-flask"></i> BETA</span>
-                <h3><span class="pub pub-generic">Reskedule</span> <span class="pub-full-name">by Wednesware</span></h3>
-                <p>Coming soon...</p>
-                <p class="code-chip mono">COMING SOON...</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">reskedule</span></p>
+        <div class="publication-list">
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill"><i class="fa-solid fa-gamepad distro-tag"></i> GAME</span>
+                    <span class="pill"><i class="fa-solid fa-flask distro-tag"></i> BETA</span>
+                    <h3><span class="pub pub-generic">Reskedule</span> <span class="pub-full-name">by Wednesware</span></h3>
+                    <p class="publication-meta">Coming soon...</p>
+                    <span class="code-chip mono">COMING SOON...</span>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./reskedule" rel="noopener noreferrer">Read more</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <span class="pill"><i class="fa-solid fa-terminal"></i> APP/CLI</span>
-                <span class="pill"><i class="fa-solid fa-code"></i> FRAMEWORK/LIBRARY</span>
-                <span class="pill"><i class="fa-solid fa-flask"></i> BETA</span>
-                <h3><span class="pub pub-generic">Grapple</span> <span class="pub-full-name">by Wednesware</span></h3>
-                <p>Easily send, edit and delete rich Discord webhook messages, including embeds, polls, buttons, mentions, and much more, directly from a terminal or script.</p>
-                <p class="code-chip mono">COMING SOON...</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">grapple</span></p>
-                    <p class="syntax-line"><span class="syntax-ln">02</span><span class="syntax-cmd">grapple</span> <span class="syntax-key">my-hook-1</span> <span class="syntax-key">send</span> <span class="syntax-note">"hello world"</span></p>
-                </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./grapple" rel="noopener noreferrer">Read more</a>
+                <span class="status wip status-no-disappear">DEVELOPMENT QUEUED</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./reskedule" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
-
-            <article class="card">
-                <span class="pill"><i class="fa-solid fa-terminal"></i> APP/CLI</span>
-                <span class="pill"><i class="fa-solid fa-bolt"></i> PRODUCTIVITY</span>
-                <span class="pill"><i class="fa-solid fa-flask"></i> BETA</span>
-                <h3><span class="pub pub-generic">Atmosphere</span> <span class="pub-full-name">by Wednesware</span></h3>
-                <p>Browse, post, and interact on Bluesky entirely from your terminal using Atmosphere.</p>
-                <p class="code-chip mono">COMING SOON...</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">atmosphere</span> <span class="syntax-key">timeline</span></p>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill"><i class="fa-solid fa-terminal distro-tag distro-tag"></i> APP/CLI</span>
+                    <span class="pill"><i class="fa-solid fa-code distro-tag"></i> FRAMEWORK/LIBRARY</span>
+                    <span class="pill"><i class="fa-solid fa-flask distro-tag"></i> BETA</span>
+                    <h3><span class="pub pub-generic">Grapple</span> <span class="pub-full-name">by Wednesware</span></h3>
+                    <p class="publication-meta">Easily send, edit and delete rich Discord webhook messages, including embeds, polls, buttons, mentions, and much more, directly from a terminal or script.</p>
+                    <span class="code-chip mono">COMING SOON...</span>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./atmosphere" rel="noopener noreferrer">Read more</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <span class="pill"><i class="fa-solid fa-terminal"></i> APP/CLI</span>
-                <span class="pill"><i class="fa-solid fa-bolt"></i> PRODUCTIVITY</span>
-                <span class="pill"><i class="fa-solid fa-flask"></i> BETA</span>
-                <h3><span class="pub pub-generic">Studio</span> <span class="pub-full-name">by Wednesware</span></h3>
-                <p>Code - OSS fork with built-in support for several useful Wednesware features like Nitrogen and Helium.</p>
-                <p class="code-chip mono">COMING SOON...</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">studio</span></p>
-                </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./studio" rel="noopener noreferrer">Read more</a>
+                <span class="status wip status-no-disappear">IN DEVELOPMENT</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./grapple" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
-
-            <article class="card">
-                <span class="pill"><i class="fa-solid fa-terminal"></i> APP/CLI</span>
-                <span class="pill"><i class="fa-solid fa-bolt"></i> PRODUCTIVITY</span>
-                <span class="pill"><i class="fa-solid fa-flask"></i> BETA</span>
-                <h3><span class="pub pub-generic">Airship</span> <span class="pub-full-name">by Wednesware</span></h3>
-                <p>CLI for managing Helium projects and Nitrogen flows dynamically.</p>
-                <p class="code-chip mono">COMING SOON...</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">airship</span></p>
-                    <p class="syntax-line"><span class="syntax-ln">02</span><span class="syntax-cmd">airship</span> <span class="syntax-key">new</span> <span class="syntax-arg">script</span> <span class="syntax-note">"MyScripts.Script1"</span></p>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill"><i class="fa-solid fa-terminal distro-tag"></i> APP/CLI</span>
+                    <span class="pill"><i class="fa-solid fa-bolt distro-tag"></i> PRODUCTIVITY</span>
+                    <span class="pill"><i class="fa-solid fa-flask distro-tag"></i> BETA</span>
+                    <h3><span class="pub pub-generic">Atmosphere</span> <span class="pub-full-name">by Wednesware</span></h3>
+                    <p class="publication-meta">Browse, post, and interact on Bluesky entirely from your terminal using Atmosphere.</p>
+                    <span class="code-chip mono">COMING SOON...</span>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./airship" rel="noopener noreferrer">Read more</a>
+                <span class="status wip status-no-disappear">DEVELOPMENT QUEUED</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./atmosphere" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
-
-            <article class="card">
-                <span class="pill"><i class="fa-solid fa-terminal"></i> APP/CLI</span>
-                <span class="pill"><i class="fa-solid fa-bolt"></i> PRODUCTIVITY</span>
-                <span class="pill"><i class="fa-solid fa-flask"></i> BETA</span>
-                <h3><span class="pub pub-generic">Modmancer</span> <span class="pub-full-name">by Wednesware</span></h3>
-                <p>CLI for creating and packaging Helium mods.</p>
-                <p class="code-chip mono">COMING SOON...</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">modm</span></p>
-                    <p class="syntax-line"><span class="syntax-ln">02</span><span class="syntax-cmd">modm</span> <span class="syntax-key">build</span> <span class="syntax-arg">coolmod/*</span></p>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill"><i class="fa-solid fa-terminal distro-tag"></i> APP/CLI</span>
+                    <span class="pill"><i class="fa-solid fa-bolt distro-tag"></i> PRODUCTIVITY</span>
+                    <span class="pill"><i class="fa-solid fa-flask distro-tag"></i> BETA</span>
+                    <h3><span class="pub pub-generic">Studio</span> <span class="pub-full-name">by Wednesware</span></h3>
+                    <p class="publication-meta">VSCode fork with built-in support for several useful Wednesware features like Nitrogen and Helium.</p>
+                    <span class="code-chip mono">COMING SOON...</span>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./modmancer" rel="noopener noreferrer">Read more</a>
+                <span class="status wip status-no-disappear">DEVELOPMENT QUEUED</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./studio" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
-            <article class="card">
-                <span class="pill"><i class="fa-solid fa-terminal"></i> APP/CLI</span>
-                <span class="pill"><i class="fa-solid fa-bolt"></i> PRODUCTIVITY</span>
-                <span class="pill"><i class="fa-solid fa-robot"></i> AUTOMATION</span>
-                <span class="pill"><i class="fa-solid fa-flask"></i> BETA</span>
-                <h3><span class="pub pub-generic">Voltage</span> <span class="pub-full-name">by Wednesware</span></h3>
-                <p>CLI for task automation and scheduling.</p>
-                <p class="code-chip mono">COMING SOON...</p>
-                <div class="hover-syntax mono" aria-hidden="true">
-                    <p class="syntax-line"><span class="syntax-ln">01</span><span class="syntax-cmd">voltage</span> <span class="syntax-key">every</span> <span class="syntax-arg">10min</span><span class="syntax-note">"git add *; git commit -m update"</span></p>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill"><i class="fa-solid fa-terminal distro-tag"></i> APP/CLI</span>
+                    <span class="pill"><i class="fa-solid fa-bolt distro-tag"></i> PRODUCTIVITY</span>
+                    <span class="pill"><i class="fa-solid fa-flask distro-tag"></i> BETA</span>
+                    <h3><span class="pub pub-generic">Airship</span> <span class="pub-full-name">by Wednesware</span></h3>
+                    <p class="publication-meta">CLI for managing Helium projects and Nitrogen flows dynamically.</p>
+                    <span class="code-chip mono">COMING SOON...</span>
                 </div>
-                <div class="button-row" style="justify-content: flex-start; margin-top: 0.8rem;">
-                    <a class="btn btn-ghost" href="./voltage" rel="noopener noreferrer">Read more</a>
+                <span class="status wip status-no-disappear">DEVELOPMENT QUEUED</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./airship" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
+                </div>
+            </article>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill"><i class="fa-solid fa-terminal distro-tag"></i> APP/CLI</span>
+                    <span class="pill"><i class="fa-solid fa-bolt distro-tag"></i> PRODUCTIVITY</span>
+                    <span class="pill"><i class="fa-solid fa-flask distro-tag"></i> BETA</span>
+                    <h3><span class="pub pub-generic">Modmancer</span> <span class="pub-full-name">by Wednesware</span></h3>
+                    <p class="publication-meta">CLI for creating and packaging Helium mods.</p>
+                    <span class="code-chip mono">COMING SOON...</span>
+                </div>
+                <span class="status wip status-no-disappear">DEVELOPMENT QUEUED</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./modmancer" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
+                </div>
+            </article>
+            <article class="publication-item">
+                <div class="publication-main">
+                    <span class="pill"><i class="fa-solid fa-terminal distro-tag"></i> APP/CLI</span>
+                    <span class="pill"><i class="fa-solid fa-bolt distro-tag"></i> PRODUCTIVITY</span>
+                    <span class="pill"><i class="fa-solid fa-robot distro-tag"></i> AUTOMATION</span>
+                    <span class="pill"><i class="fa-solid fa-flask distro-tag"></i> BETA</span>
+                    <h3><span class="pub pub-generic">Voltage</span> <span class="pub-full-name">by Wednesware</span></h3>
+                    <p class="publication-meta">CLI for task automation and scheduling.</p>
+                    <span class="code-chip mono">COMING SOON...</span>
+                </div>
+                <span class="status wip status-no-disappear">DEVELOPMENT QUEUED</span>
+                <div class="publication-end">
+                    <a class="publication-github" href="./voltage" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
                 </div>
             </article>
         </div>

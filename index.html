@@ -29,6 +29,7 @@
             <li><a class="nav-home" href="index.html" data-page="home">Home</a></li>
             <li><a class="nav-publications" href="publications.html" data-page="publications">Publications</a></li>
             <li><a class="nav-distros" href="distros.html" data-page="distros">Distributions</a></li>
+            <li><a class="nav-projects" href="projects.html" data-page="projects">Projects</a></li>
             <li><a class="nav-inbox" href="inbox.html" data-page="inbox">Inbox</a></li>
             <li><a class="nav-about" href="about.html" data-page="about">About</a></li>
             <li><a class="nav-team" href="team.html" data-page="team">Team</a></li>
@@ -65,169 +66,56 @@
 
     <section class="section reveal" data-color="lithium">
         <div class="section-head">
-            <h2>Flagship releases</h2>
-            <p>Core tools in the Wednesware stack. Each one ships separately and can be installed only when you need it.</p>
+            <h2>Explore</h2>
+            <p>Browse publications, distributions and other projects by Wednesware.</p>
         </div>
 
-        <p class="section-label">Perkeo</p>
-        <h3 class="section-title">True modern coding</h3>
-        <div class="publication-list">
-            <article class="publication-item">
-                <div class="publication-main">
-                    <h3><span class="pub pub-generic">Perkeo</span></h3>
-                    <p class="publication-meta">Modern, lightweight and powerful language for beginners, students, or professionals.</p>
+        <div class="hub-grid">
+            <a class="hub-card hub-card-publications" href="publications.html">
+                <div class="hub-card-body">
+                    <span class="hub-label">Publications</span>
+                    <h2>Official packages &amp; tools</h2>
+                    <p>Installable libraries, runtimes and utilities built by Wednesware.</p>
                 </div>
-                <span class="status live">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="./perkeo" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
+                <i class="fa-solid fa-arrow-up-right-from-square hub-arrow" aria-hidden="true"></i>
+            </a>
+            <a class="hub-card hub-card-distros" href="distros.html">
+                <div class="hub-card-body">
+                    <span class="hub-label">Distributions</span>
+                    <h2>Hydrogen-powered apps</h2>
+                    <p>Official and community-built apps distributed through Hydrogen.</p>
                 </div>
-            </article>
-            <article class="publication-item publication-item-featured">
-                <div class="publication-main">
-                    <span class="pill">Recommended</span>
-                    <h3><span class="pub pub-lithium">Perkeo w/ Lithium</span></h3>
-                    <p class="publication-meta">Lithium is an official interpreter and runtime ecosystem for the Perkeo language.</p>
-                    <details class="install-dropdown">
-                        <summary>
-                            <span class="mono">Install methods</span>
-                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                        </summary>
-                        <div class="install-options">
-                            <p class="install-note">Choose the command that fits your workflow.</p>
-                            <span><span class="code-chip mono">pipx install wwli</span><span class="install-note"> (recommended)</span></span>
-                            <span><span class="code-chip mono">yay -S li</span><span class="install-note"> (best for arch-based systems)</span></span>
-                            <span><span class="code-chip mono">n2 get lithium</span><span class="install-note"> (library only)</span></span>
-                        </div>
-                    </details>
+                <i class="fa-solid fa-arrow-up-right-from-square hub-arrow" aria-hidden="true"></i>
+            </a>
+            <a class="hub-card hub-card-projects" href="projects.html">
+                <div class="hub-card-body">
+                    <span class="hub-label">Projects</span>
+                    <h2>Languages &amp; templates</h2>
+                    <p>Things that stand outside publications and distributions &mdash; like Perkeo and Sourcegen.</p>
                 </div>
-                <span class="status live">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="./lithium" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
+                <i class="fa-solid fa-arrow-up-right-from-square hub-arrow" aria-hidden="true"></i>
+            </a>
         </div>
-        <p class="section-label">Publications</p>
-        <h3 class="section-title">Production-ready tools</h3>
 
-        <div class="publication-list">
-            <article class="publication-item">
-                <div class="publication-main">
-                    <h3><span class="pub pub-nitrogen">Nitrogen</span></h3>
-                    <p class="publication-meta">Ultra-light installer for official Wednesware publications.</p>
-                    <span class="code-chip mono">pipx install wwn</span>
-                </div>
-                <span class="status live">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="./nitrogen" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
-
-            <article class="publication-item">
-                <div class="publication-main">
-                    <h3><span class="pub pub-magnesium">Magnesium</span></h3>
-                    <p class="publication-meta">Shared utility library powering logging, config and data structures.</p>
-                    <span class="code-chip mono">n2 get magnesium</span>
-                </div>
-                <span class="status live">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="./magnesium" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
-
-            <article class="publication-item">
-                <div class="publication-main">
-                    <h3><span class="pub pub-helium">Helium</span></h3>
-                    <p class="publication-meta">Publication and game creation toolkit with modular script architecture.</p>
-                    <span class="code-chip mono">n2 get helium</span>
-                </div>
-                <span class="status live">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="./helium" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
-
-            <article class="publication-item">
-                <div class="publication-main">
-                    <h3><span class="pub pub-hydrogen">Hydrogen</span></h3>
-                    <p class="publication-meta">Official and community-made distribution installer.</p>
-                    <span class="code-chip mono">pipx install wwh</span>
-                </div>
-                <span class="status wip">DEVELOPMENT QUEUED</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="./hydrogen" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
-
-            <article class="publication-item">
-                <div class="publication-main">
-                    <h3><span class="pub pub-neon">Neon</span></h3>
-                    <p class="publication-meta">Terminal effects toolkit for rich command-line visuals and interaction polish.</p>
-                    <span class="code-chip mono">n2 get neon</span>
-                </div>
-                <span class="status live">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="./neon" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
-
-            <article class="publication-item">
-                <div class="publication-main">
-                    <h3><span class="pub pub-oxygen">Oxygen</span></h3>
-                    <p class="publication-meta">Official installer for Perkeo ports of existing publications.</p>
-                    <span class="code-chip mono">pipx install wwo</span>
-                </div>
-                <span class="status wip">DEVELOPMENT QUEUED</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="./oxygen" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
-            <article class="publication-item">
-                <div class="publication-main">
-                    <h3><span class="pub pub-iodine">Iodine</span></h3>
-                    <p class="publication-meta">Smart terminal input widgets for professional command-line interaction.</p>
-                    <span class="code-chip mono">n2 get iodine</span>
-                </div>
-                <span class="status live">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="./iodine" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
+        <div class="mini-hub-grid">
+            <a class="mini-hub-card mini-hub-inbox" href="inbox.html">
+                <span class="mini-hub-name">Inbox</span>
+                <span class="mini-hub-desc">Announcements and release notes</span>
+            </a>
+            <a class="mini-hub-card mini-hub-about" href="about.html">
+                <span class="mini-hub-name">About</span>
+                <span class="mini-hub-desc">Who we are and what we build</span>
+            </a>
+            <a class="mini-hub-card mini-hub-team" href="team.html">
+                <span class="mini-hub-name">Team</span>
+                <span class="mini-hub-desc">The people behind the work</span>
+            </a>
+            <a class="mini-hub-card mini-hub-contact" href="contact.html">
+                <span class="mini-hub-name">Contact</span>
+                <span class="mini-hub-desc">Get in touch</span>
+            </a>
         </div>
     </section>
-
-    <p class="section-label">Templates</p>
-    <h3 class="section-title">Ready-to-use GitHub templates</h3>
-
-    <div class="publication-list">
-        <article class="publication-item">
-            <div class="publication-main">
-                <h3><span class="pub pub-nitrogen">Sourcegen</span></h3>
-                <p class="publication-meta">A lightweight starter template for building Nitrogen-based installers with extension and LEN support out of the box.</p>
-                <span class="code-chip mono">COMING SOON...</span>
-            </div>
-            <span class="status wip">IN DEVELOPMENT</span>
-            <div class="publication-end">
-                <a class="publication-github" href="./sourcegen" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-            </div>
-        </article>
-    </div>
-
-    <p class="section-label">Featured</p>
-    <h3 class="section-title">Featured <span class="pub pub-hydrogen">Hydrogen</span> distributions</h3>
-    <div class="publication-list">
-        <article class="publication-item">
-            <div class="publication-main">
-                <span class="pill"><i class="fa-solid fa-layer-group"></i> DISTRO HUB</span>
-                <h3><span class="pub pub-hydrogen">Hydrogen</span> distro showcase</h3>
-                <p class="publication-meta">Featured distributions now live on a dedicated page with the same publication-style layout.</p>
-                <span class="code-chip mono">/distros</span>
-            </div>
-            <span class="status live">LIVE</span>
-            <div class="publication-end">
-                <a class="publication-github" href="./distros" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open distros</a>
-            </div>
-        </article>
-    </div>
 
     <section class="section reveal" data-color="magnesium">
         <div class="section-head">
