@@ -80,10 +80,14 @@
                         <div class="install-options">
                             <p class="install-note">Choose the command that fits your workflow.</p>
                             <span><span class="code-chip mono">pipx install wwli</span><span class="install-note"> (recommended)</span></span>
-                            <span><span class="code-chip mono">yay -S li</span><span class="install-note"> (best for arch-based systems)</span></span>
+                            <!--<span><span class="code-chip mono">yay -S li</span><span class="install-note"> (best for arch-based systems)</span></span>-->
                             <span><span class="code-chip mono">n2 get lithium</span><span class="install-note"> (library only)</span></span>
                         </div>
                     </details>
+                    <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
+                        <a class="btn btn-ghost" href="https://pypi.org/publication/wwli/" target="_blank" rel="noopener noreferrer">PyPI</a>
+                        <a class="btn btn-ghost" href="https://aur.archlinux.org/packages/li" target="_blank" rel="noopener noreferrer">AUR</a>
+                    </div>
                 </div>
                 <span class="status live status-no-disappear">LIVE</span>
                 <div class="publication-end">
@@ -94,8 +98,19 @@
                 <div class="publication-main">
                     <span class="pill">Installer</span>
                     <h3><span class="pub pub-nitrogen">Nitrogen</span></h3>
-                    <p class="publication-meta">Ultra-light installer for official Wednesware publications.</p>
-                    <span class="code-chip mono">pipx install wwn</span>
+                    <p class="publication-meta">Fast installer for official Wednesware publications.</p>
+                    <details class="install-dropdown">
+                        <summary>
+                            <span class="mono">Install methods</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="install-options">
+                            <p class="install-note">Choose the command that fits your workflow.</p>
+                            <span><span class="code-chip mono">pipx install wwn</span><span class="install-note"> (recommended)</span></span>
+                            <!--<span><span class="code-chip mono">yay -S li</span><span class="install-note"> (best for arch-based systems)</span></span>-->
+                            <span><span class="code-chip mono">n2 get nitrogen</span><span class="install-note"> (library only)</span></span>
+                        </div>
+                    </details>
                     <div class="button-row" style="justify-content: flex-start; margin-top: 0.6rem;">
                         <a class="btn btn-ghost" href="https://pypi.org/publication/wwn/" target="_blank" rel="noopener noreferrer">PyPI</a>
                         <a class="btn btn-ghost" href="https://aur.archlinux.org/packages/n2" target="_blank" rel="noopener noreferrer">AUR</a>
@@ -134,7 +149,7 @@
                 <div class="publication-main">
                     <span class="pill">Distributions</span>
                     <h3><span class="pub pub-hydrogen">Hydrogen</span></h3>
-                    <p class="publication-meta">Official and community-made distribution installer.</p>
+                    <p class="publication-meta">Sourcegen-based Distrobase installer</p>
                     <span class="code-chip mono">pipx install wwh</span>
                 </div>
                 <span class="status wip status-no-disappear">IN DEVELOPMENT</span>
