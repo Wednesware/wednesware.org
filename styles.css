@@ -18,6 +18,8 @@
     --hydrogen: #dd2020;
     --neon: #9e88ff;
     --oxygen: #ff9560;
+    --fluorine: #ff8c00;
+    --sulfur: #00ff5e;
     --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
     --radius-lg: 24px;
     --radius-md: 16px;
@@ -877,6 +879,14 @@ textarea {
 
 .pub-oxygen {
     background-image: linear-gradient(90deg, #886926, #008cff, #f83232);
+}
+
+.pub-fluorine {
+    background-image: linear-gradient(90deg, #f53d3d, #ff8c00, #e3853d);
+}
+
+.pub-sulfur {
+    background-image: linear-gradient(90deg, #00ff5e, #00cc44, #009933);
 }
 
 .pub-iodine {
