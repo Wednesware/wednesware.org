@@ -74,8 +74,21 @@
             <p>Posts are archived here so anyone can track milestones and release movement.</p>
         </div>
 
+        <div class="search-shell">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <input id="inbox-search" type="search" data-page-search=".article" data-page-list=".grid.cards-2" data-empty-state="[data-inbox-empty]" placeholder="Search inbox posts…" aria-label="Search inbox posts" />
+            </div>
+        </div>
+
         <div class="grid cards-2">
             <!--new article here-->
+            <article class="article">
+                <time datetime="2026-09-03">Sep 11, 2026</time>
+                <p>Many updates!</p>
+                <p><span class="pub pub-sulfur">Sulfur</span> 26.1 has been released and multiple other projects including <span class="pub pub-arsenic">Arsenic</span> are now in development.</p>
+                <p>The website now features search boxes in the <b>Home</b>, <b>Projects</b>, <b>Distributions</b>, <b>Publications</b>, and <b>Inbox</b> sections.</p>
+            </article>
             <article class="article">
                 <time datetime="2026-09-03">Sep 3, 2026</time>
                 <p>Starting today, Inbox articles will no longer have titles.</p>
@@ -148,6 +161,7 @@
                 <p>Have a nice day.</p>
             </article>
         </div>
+        <div class="search-empty" data-inbox-empty hidden>No inbox posts match your search.</div>
     </section>
 
     <section class="section reveal" data-color="lithium">

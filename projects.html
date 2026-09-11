@@ -70,6 +70,12 @@
     </section>
 
     <section class="section reveal" data-color="nitrogen">
+        <div class="search-shell">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <input id="projects-search" type="search" data-page-search=".publication-item" data-page-list=".publication-list" data-empty-state="[data-projects-empty]" placeholder="Search projects…" aria-label="Search projects" />
+            </div>
+        </div>
         <!-- PILLS
             <span class="pill"><i class="fa-solid fa-code"></i> PROGRAMMING LANGUAGE</span>
             <span class="pill"><i class="fa-solid fa-copy"></i> TEMPLATE</span>
@@ -78,53 +84,8 @@
             <span class="pill"><i class="fa-solid fa-toolbox"></i> TOOL</span>
             <span class="pill"><i class="fa-solid fa-book"></i> SPEC</span>
         -->
-        <div class="publication-list">
-            <article class="publication-item">
-                <div class="publication-main">
-                    <span class="pill"><i class="fa-solid fa-code distro-tag"></i> PROGRAMMING LANGUAGE</span>
-                    <h3><span class="pub pub-generic">Perkeo</span></h3>
-                    <p class="publication-meta">Modern, lightweight and powerful language for beginners, students, or professionals.</p>
-                </div>
-                <span class="status live status-no-disappear">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="https://github.com/Wednesware/Perkeo" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
-            <article class="publication-item">
-                <div class="publication-main">
-                    <span class="pill"><i class="fa-solid fa-inbox distro-tag"></i> REGISTRY</span>
-                    <h3><span class="pub pub-hydrogen">Distrobase</span></h3>
-                    <p class="publication-meta">Open platform for hosting and distributing software online through namespaces.</p>
-                </div>
-                <span class="status live status-no-disappear">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="https://github.com/Wednesware/Distrobase" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
-            <article class="publication-item">
-                <div class="publication-main">
-                    <span class="pill"><i class="fa-solid fa-copy distro-tag"></i> TEMPLATE</span>
-                    <h3><span class="pub pub-nitrogen">Sourcegen</span></h3>
-                    <p class="publication-meta">A lightweight starter template for building Nitrogen-based installers with extension and LEN support out of the box.</p>
-                    <span class="code-chip mono">gh repo fork Wednesware/Sourcegen --clone</span>
-                </div>
-                <span class="status live status-no-disappear">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="https://github.com/Wednesware/Sourcegen" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
-            <article class="publication-item">
-                <div class="publication-main">
-                    <span class="pill"><i class="fa-solid fa-copy distro-tag"></i> TEMPLATE</span>
-                    <h3><span class="pub pub-generic">Document2.0</span></h3>
-                    <p class="publication-meta">A template and format for modern in-depth documentation.</p>
-                    <span class="code-chip mono">gh repo create my-repo --template Wednesware/Document2.0 --public</span>
-                </div>
-                <span class="status live status-no-disappear">LIVE</span>
-                <div class="publication-end">
-                    <a class="publication-github" href="https://github.com/Wednesware/Document2.0" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-circle-info"></i> Read more</a>
-                </div>
-            </article>
+        <div class="publication-list" data-catalog-list="projects">
+            <div class="search-empty" data-projects-empty hidden>No projects match your search.</div>
         </div>
     </section>
 
@@ -134,6 +95,7 @@
     </footer>
 </main>
 
+<script src="catalog.js"></script>
 <script src="site.js"></script>
 </body>
 </html>

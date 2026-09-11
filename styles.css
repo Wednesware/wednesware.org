@@ -20,6 +20,7 @@
     --oxygen: #ff9560;
     --fluorine: #ff8c00;
     --sulfur: #00ff5e;
+    --sodium: #4987a0;
     --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
     --radius-lg: 24px;
     --radius-md: 16px;
@@ -270,6 +271,107 @@ a {
     align-items: center;
     width: 100%;
     margin: 0 auto;
+}
+
+.search-shell {
+    width: min(840px, 100%);
+    margin: 0 auto 1.25rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.search-shell .card {
+    padding: 1rem 1.1rem;
+}
+
+.search-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.search-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.8rem 0.9rem;
+    min-height: 3.3rem;
+}
+
+.search-input-wrap i {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.search-input-wrap input {
+    flex: 1;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem;
+}
+
+.search-input-wrap input::placeholder {
+    color: rgba(168, 178, 193, 0.8);
+}
+
+.search-results {
+    display: grid;
+    gap: 0.6rem;
+    margin-top: 0.35rem;
+}
+
+.search-results[hidden] {
+    display: none;
+}
+
+.search-result {
+    display: grid;
+    gap: 0.1rem;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.025);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.search-result:hover,
+.search-result:focus-visible {
+    border-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(-1px);
+}
+
+.search-result-type {
+    color: var(--muted);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.search-result strong {
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+}
+
+.search-result span {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.search-empty {
+    padding: 0.9rem 0.8rem;
+    color: var(--muted);
+    border: 1px dashed var(--border);
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .btn {
@@ -887,6 +989,14 @@ textarea {
 
 .pub-sulfur {
     background-image: linear-gradient(90deg, #00ff5e, #00cc44, #009933);
+}
+
+.pub-sodium {
+    background-image: linear-gradient(90deg, #02eaff, #4987a0, #004a90);
+}
+
+.pub-arsenic {
+    background-image: linear-gradient(90deg, #3d8a7c, #2144df, #7567dd);
 }
 
 .pub-iodine {
