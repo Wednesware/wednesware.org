@@ -664,6 +664,10 @@ a {
     align-content: center;
 }
 
+.team-member-copy h1 {
+    font-size: 10em;
+}
+
 .team-member-copy img {
     display: block;
     width: min(16em, 100%);
