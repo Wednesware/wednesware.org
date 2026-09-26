@@ -1,6 +1,21 @@
 window.WEDNESWARE_CATALOG = {
     publications: [
         {
+            title: "Sodium",
+            color: "sodium",
+            type: "Publication",
+            category: "publications",
+            description: "General-purpose, scalable programming language with modern features and expressive syntax.",
+            status: "live",
+            statusLabel: "LIVE IN BETA",
+            github: "https://github.com/Wednesware/Sodium",
+            tags: [{ label: "Programming language" }],
+            installMethods: [
+                { command: "n2 get sodium && n2 install sodium", note: "recommended" },
+                { command: "n2 get sodium", note: "library only" }
+            ]
+        },
+        {
             title: "Lithium",
             color: "lithium",
             type: "Publication",
@@ -15,8 +30,7 @@ window.WEDNESWARE_CATALOG = {
                 { command: "n2 get lithium", note: "library only" }
             ],
             buttons: [
-                { label: "PyPI", href: "https://pypi.org/project/wwli/" },
-                { label: "AUR", href: "https://aur.archlinux.org/packages/li" }
+                { label: "PyPI", href: "https://pypi.org/project/wwli/" }
             ]
         },
         {
@@ -34,8 +48,7 @@ window.WEDNESWARE_CATALOG = {
                 { command: "n2 get nitrogen", note: "library only" }
             ],
             buttons: [
-                { label: "PyPI", href: "https://pypi.org/project/wwn/" },
-                { label: "AUR", href: "https://aur.archlinux.org/packages/n2" }
+                { label: "PyPI", href: "https://pypi.org/project/wwn/" }
             ]
         },
         {
@@ -72,7 +85,13 @@ window.WEDNESWARE_CATALOG = {
             statusLabel: "LIVE",
             github: "https://github.com/Wednesware/Hydrogen",
             tags: [{ label: "Distributions" }],
-            codeChip: "pipx install wwh"
+            installMethods: [
+                { command: "pipx install wwh", note: "recommended" },
+                { command: "n2 get hydrogen", note: "library only" }
+            ],
+            buttons: [
+                { label: "PyPI", href: "https://pypi.org/project/wwh/" }
+            ]
         },
         {
             title: "Neon",
@@ -87,16 +106,19 @@ window.WEDNESWARE_CATALOG = {
             codeChip: "n2 get neon"
         },
         {
-            title: "Oxygen",
-            color: "oxygen",
+            title: "Boron",
+            color: "boron",
             type: "Publication",
             category: "publications",
-            description: "Official installer for Perkeo ports of existing publications.",
-            status: "wip",
-            statusLabel: "IN DEVELOPMENT",
-            github: "https://github.com/Wednesware/Oxygen",
-            tags: [{ label: "Perkeo libraries" }],
-            codeChip: "pipx install wwo"
+            description: "Library and CLI for resolving information and documentation from repositories.",
+            status: "live",
+            statusLabel: "LIVE",
+            github: "https://github.com/Wednesware/Boron",
+            tags: [{ label: "DX" }],
+            installMethods: [
+                { command: "n2 get boron && n2 install boron", note: "recommended" },
+                { command: "n2 get boron", note: "library only" }
+            ]
         },
         {
             title: "Fluorine",
@@ -123,18 +145,6 @@ window.WEDNESWARE_CATALOG = {
             codeChip: "n2 get sulfur"
         },
         {
-            title: "Sodium",
-            color: "sodium",
-            type: "Publication",
-            category: "publications",
-            description: "Extension framework to Helium offering various utilities and resources for text-based game development.",
-            status: "wip",
-            statusLabel: "IN DEVELOPMENT",
-            github: "https://github.com/Wednesware/Sodium",
-            tags: [{ label: "Helium games" }],
-            codeChip: "n2 get sodium"
-        },
-        {
             title: "Arsenic",
             color: "arsenic",
             type: "Publication",
@@ -143,7 +153,7 @@ window.WEDNESWARE_CATALOG = {
             status: "wip",
             statusLabel: "IN DEVELOPMENT",
             github: "https://github.com/Wednesware/Arsenic",
-            tags: [{ label: "Custom Python" }],
+            tags: [{ label: "Python Expanded" }],
             codeChip: "n2 get arsenic"
         },
         {

@@ -349,12 +349,13 @@
         const colors = {
             base: [7, 8, 9],
             nitrogen: [24, 25, 27],
+            sodium: [136, 105, 38],
             lithium: [32, 34, 36],
             magnesium: [27, 28, 30],
             helium: [34, 35, 38],
             hydrogen: [38, 30, 33],
             neon: [36, 37, 40],
-            oxygen: [31, 32, 35],
+            boron: [31, 32, 35],
             fluorine: [255, 140, 0],
             sulfur: [0, 255, 94],
             iodine: [24, 2, 10]
