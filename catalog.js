@@ -230,6 +230,39 @@ window.WEDNESWARE_CATALOG = {
     ],
     distros: [
         {
+            title: "Skelebash",
+            color: "generic",
+            type: "Distribution",
+            category: "distros",
+            description: "Coming soon...",
+            status: "wip",
+            statusLabel: "DEVELOPMENT QUEUED",
+            github: "github.com/Wednesware/Skelebash",
+            tags: [
+                { label: "GAME", icon: "fa-solid fa-gamepad" },
+                { label: "BETA", icon: "fa-solid fa-flask" }
+            ],
+            codeChip: "COMING SOON...",
+            subtitle: "by Wednesware"
+        },
+        {
+            title: "Bonemarrow Engine (BMRW)",
+            color: "generic",
+            type: "Distribution",
+            category: "distros",
+            description: "The Sodium-based game engine Skelebash runs on.",
+            status: "wip",
+            statusLabel: "DEVELOPMENT QUEUED",
+            github: "github.com/Wednesware/Bonemarrow",
+            tags: [
+                { label: "APP/CLI", icon: "fa-solid fa-terminal" },
+                { label: "FRAMEWORK/LIBRARY", icon: "fa-solid fa-code" },
+                { label: "BETA", icon: "fa-solid fa-flask" }
+            ],
+            codeChip: "COMING SOON...",
+            subtitle: "by Wednesware"
+        },
+        {
             title: "Reskedule",
             color: "generic",
             type: "Distribution",
@@ -237,7 +270,7 @@ window.WEDNESWARE_CATALOG = {
             description: "Coming soon...",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "./reskedule",
+            github: "github.com/Wednesware/Reskedule",
             tags: [
                 { label: "GAME", icon: "fa-solid fa-gamepad" },
                 { label: "BETA", icon: "fa-solid fa-flask" }
@@ -253,7 +286,7 @@ window.WEDNESWARE_CATALOG = {
             description: "Easily send, edit and delete rich Discord webhook messages, including embeds, polls, buttons, mentions, and much more, directly from a terminal or script.",
             status: "wip",
             statusLabel: "IN DEVELOPMENT",
-            github: "./grapple",
+            github: "github.com/Wednesware/Grapple",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "FRAMEWORK/LIBRARY", icon: "fa-solid fa-code" },
@@ -270,7 +303,7 @@ window.WEDNESWARE_CATALOG = {
             description: "Browse, post, and interact on Bluesky entirely from your terminal using Atmosphere.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "./atmosphere",
+            github: "github.com/Wednesware/Atmosphere",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
@@ -287,7 +320,7 @@ window.WEDNESWARE_CATALOG = {
             description: "VSCode fork with built-in support for several useful Wednesware features like Nitrogen and Helium.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "./studio",
+            github: "github.com/Wednesware/Studio",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
@@ -304,7 +337,7 @@ window.WEDNESWARE_CATALOG = {
             description: "CLI for managing Helium projects and Nitrogen flows dynamically.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "./airship",
+            github: "github.com/Wednesware/Airship",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
@@ -321,7 +354,7 @@ window.WEDNESWARE_CATALOG = {
             description: "CLI for creating and packaging Helium mods.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "./modmancer",
+            github: "github.com/Wednesware/Modmancer",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
@@ -338,7 +371,7 @@ window.WEDNESWARE_CATALOG = {
             description: "CLI for task automation and scheduling.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "./voltage",
+            github: "github.com/Wednesware/Voltage",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
