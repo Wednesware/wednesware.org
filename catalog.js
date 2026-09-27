@@ -167,6 +167,30 @@ window.WEDNESWARE_CATALOG = {
             github: "https://github.com/Wednesware/Iodine",
             tags: [{ label: "Terminal input" }],
             codeChip: "n2 get iodine"
+        },
+        {
+            title: "Carbon",
+            color: "carbon",
+            type: "Publication",
+            category: "publications",
+            description: "A lightweight cross-platform audio playback library for WAV files.",
+            status: "live",
+            statusLabel: "LIVE",
+            github: "https://github.com/Wednesware/Carbon",
+            tags: [{ label: "Audio playback" }],
+            codeChip: "n2 get carbon"
+        },
+        {
+            title: "Calcium",
+            color: "calcium",
+            type: "Publication",
+            category: "publications",
+            description: "Bonemarrow Engine simplified into a fully-fledged game framework.",
+            status: "wip",
+            statusLabel: "DEVELOPMENT QUEUED",
+            github: "https://github.com/Wednesware/Calcium",
+            tags: [{ label: "Game engine" }],
+            codeChip: "n2 get calcium"
         }
     ],
     projects: [

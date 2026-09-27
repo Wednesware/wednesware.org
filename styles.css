@@ -1023,6 +1023,14 @@ textarea {
     background-image: linear-gradient(90deg, #c62b2b, #f46a58, #f19595);
 }
 
+.pub-carbon {
+    background-image: linear-gradient(90deg, #5e5e5e, #474747, #242424);
+}
+
+.pub-calcium {
+    background-image: linear-gradient(90deg, #ffffff, #b5b4b4, #bfbfbf);
+}
+
 .pub-full-name {
     margin-left: 1em;
     font-size: 0.95rem;
