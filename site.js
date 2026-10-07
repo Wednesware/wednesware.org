@@ -358,7 +358,8 @@
             boron: [31, 32, 35],
             fluorine: [255, 140, 0],
             sulfur: [0, 255, 94],
-            iodine: [24, 2, 10]
+            iodine: [24, 2, 10],
+            uranium: [80, 10, 16]
         };
 
         function lerp(a, b, t) {

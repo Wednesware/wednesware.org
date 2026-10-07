@@ -21,6 +21,7 @@
     --boron: #ff9560;
     --fluorine: #ff8c00;
     --sulfur: #00ff5e;
+    --uranium: #ff5a5a;
     --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
     --radius-lg: 24px;
     --radius-md: 16px;
@@ -1029,6 +1030,10 @@ textarea {
 
 .pub-calcium {
     background-image: linear-gradient(90deg, #ffffff, #b5b4b4, #bfbfbf);
+}
+
+.pub-uranium {
+    background-image: linear-gradient(90deg, #ff8e8e, #ff3d4d, #b7122a, #c1632c);
 }
 
 .pub-full-name {

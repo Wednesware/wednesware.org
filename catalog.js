@@ -114,7 +114,7 @@ window.WEDNESWARE_CATALOG = {
             status: "live",
             statusLabel: "LIVE",
             github: "https://github.com/Wednesware/Boron",
-            tags: [{ label: "DX" }],
+            tags: [{ label: "Information resolver" }],
             installMethods: [
                 { command: "n2 get boron && n2 install boron", note: "recommended" },
                 { command: "n2 get boron", note: "library only" }
@@ -191,6 +191,21 @@ window.WEDNESWARE_CATALOG = {
             github: "https://github.com/Wednesware/Calcium",
             tags: [{ label: "Game engine" }],
             codeChip: "n2 get calcium"
+        },
+        {
+            title: "Uranium",
+            color: "uranium",
+            type: "Publication",
+            category: "publications",
+            description: "Local and cloud-synced key-value storage for programs to persist non-sensitive user data.",
+            status: "live",
+            statusLabel: "LIVE",
+            github: "https://github.com/Wednesware/Uranium",
+            tags: [{ label: "Data storage" }],
+            installMethods: [
+                { command: "n2 get uranium && n2 install uranium", note: "recommended" },
+                { command: "n2 get uranium", note: "library only" }
+            ]
         }
     ],
     projects: [
