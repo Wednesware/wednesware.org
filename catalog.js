@@ -269,6 +269,21 @@ window.WEDNESWARE_CATALOG = {
     ],
     distros: [
         {
+            title: "kefir",
+            color: "generic",
+            type: "Distribution",
+            category: "distros",
+            description: "Compile Python applications to portable executables.",
+            status: "live",
+            statusLabel: "LIVE",
+            github: "https://github.com/Wednesware/kefir",
+            tags: [
+                { label: "APP/CLI", icon: "fa-solid fa-terminal" }
+            ],
+            codeChip: "h2 get kefir@wednesware.org && h2 install kefir",
+            subtitle: "by Wednesware"
+        },
+        {
             title: "Skelebash",
             color: "generic",
             type: "Distribution",
@@ -276,7 +291,7 @@ window.WEDNESWARE_CATALOG = {
             description: "Coming soon...",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "github.com/Wednesware/Skelebash",
+            github: "https://github.com/Wednesware/Skelebash",
             tags: [
                 { label: "GAME", icon: "fa-solid fa-gamepad" },
                 { label: "BETA", icon: "fa-solid fa-flask" }
@@ -292,7 +307,7 @@ window.WEDNESWARE_CATALOG = {
             description: "The Sodium-based game engine Skelebash runs on.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "github.com/Wednesware/Bonemarrow",
+            github: "https://github.com/Wednesware/Bonemarrow",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "FRAMEWORK/LIBRARY", icon: "fa-solid fa-code" },
@@ -309,7 +324,7 @@ window.WEDNESWARE_CATALOG = {
             description: "Coming soon...",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "github.com/Wednesware/Reskedule",
+            github: "https://github.com/Wednesware/Reskedule",
             tags: [
                 { label: "GAME", icon: "fa-solid fa-gamepad" },
                 { label: "BETA", icon: "fa-solid fa-flask" }
@@ -325,7 +340,7 @@ window.WEDNESWARE_CATALOG = {
             description: "Easily send, edit and delete rich Discord webhook messages, including embeds, polls, buttons, mentions, and much more, directly from a terminal or script.",
             status: "wip",
             statusLabel: "IN DEVELOPMENT",
-            github: "github.com/Wednesware/Grapple",
+            github: "https://github.com/Wednesware/Grapple",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "FRAMEWORK/LIBRARY", icon: "fa-solid fa-code" },
@@ -342,7 +357,7 @@ window.WEDNESWARE_CATALOG = {
             description: "Browse, post, and interact on Bluesky entirely from your terminal using Atmosphere.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "github.com/Wednesware/Atmosphere",
+            github: "https://github.com/Wednesware/Atmosphere",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
@@ -359,7 +374,7 @@ window.WEDNESWARE_CATALOG = {
             description: "VSCode fork with built-in support for several useful Wednesware features like Nitrogen and Helium.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "github.com/Wednesware/Studio",
+            github: "https://github.com/Wednesware/Studio",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
@@ -376,7 +391,7 @@ window.WEDNESWARE_CATALOG = {
             description: "CLI for managing Helium projects and Nitrogen flows dynamically.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "github.com/Wednesware/Airship",
+            github: "https://github.com/Wednesware/Airship",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
@@ -393,7 +408,7 @@ window.WEDNESWARE_CATALOG = {
             description: "CLI for creating and packaging Helium mods.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "github.com/Wednesware/Modmancer",
+            github: "https://github.com/Wednesware/Modmancer",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
@@ -410,7 +425,7 @@ window.WEDNESWARE_CATALOG = {
             description: "CLI for task automation and scheduling.",
             status: "wip",
             statusLabel: "DEVELOPMENT QUEUED",
-            github: "github.com/Wednesware/Voltage",
+            github: "https://github.com/Wednesware/Voltage",
             tags: [
                 { label: "APP/CLI", icon: "fa-solid fa-terminal" },
                 { label: "PRODUCTIVITY", icon: "fa-solid fa-bolt" },
